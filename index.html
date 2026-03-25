@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Interacción Canvas</title>
+</head>
+<body style="background:#111; color:white; font-family:Arial; text-align:center;">
+
+    <h2>Simulación de Círculos</h2>
+
+    <div>
+        <input type="range" id="rangeCircles" min="1" max="30" value="8">
+        <input type="number" id="inputCircles" min="1" max="30" value="8">
+        <p>Cantidad: <span id="valueCircles">8</span></p>
+    </div>
+
+    <!-- Canvas fijo -->
+    <canvas id="canvasBounce" width="600" height="400" 
+            style="border:2px solid white; display:block; margin:20px auto;">
+    </canvas>
+
+    <script src="./assets/js/main.js"></script>
+
+</body>
+</html>
