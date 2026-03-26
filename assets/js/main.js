@@ -36,6 +36,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
             // Movimiento vertical lento hacia arriba
             this.dy = -(Math.random() * 1 + 0.5);
+            this.dx = Math.random() * 1 - 0.5;
 
             this.color = "#a70b0b";
 
@@ -55,6 +56,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         move() {
             this.posY += this.dy;
+            this.posX += this.dx;
 
             // Si sale por arriba, reaparece abajo
             if (this.posY + this.radius < 0) {
