@@ -3,23 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <title>Juego de Círculos</title>
+    <link rel="stylesheet" href="./assets/css/styles.css">
 </head>
-<body style="background:#111; color:white; font-family:Arial; text-align:center;">
+<body>
 
-    <h2>Simulación de Círculos</h2>
-    <h3 id="level">Nivel 1</h3>
+    <div class="container">
 
-    <div>
-        <p>Círculos eliminados: <span id="removed">0</span> / 80</p>
-        <p>Porcentaje: <span id="percent">0%</span></p>
-        <p>Faltan para siguiente nivel: <span id="remaining">10</span></p>
+        <h1>Simulación de Círculos</h1>
+        <h2 id="level">Nivel 1</h2>
+
+        <div class="stats glass">
+            <p>🔴 Eliminados: <span id="removed">0</span> / 80</p>
+            <p>📊 Progreso: <span id="percent">0%</span></p>
+            <p>⏳ Siguiente nivel en: <span id="remaining">10</span></p>
+        </div>
+
+        <div class="canvas-container glass">
+            <canvas id="canvasBounce" width="600" height="400"></canvas>
+        </div>
+
     </div>
 
-    <canvas id="canvasBounce" width="600" height="400"
-        style="border:2px solid white; display:block; margin:20px auto;">
-    </canvas>
-
     <script src="./assets/js/main.js"></script>
-
 </body>
 </html>

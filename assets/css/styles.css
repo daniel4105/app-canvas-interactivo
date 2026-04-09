@@ -1,0 +1,80 @@
+/* 🔥 RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* 🌌 FONDO */
+body {
+    font-family: 'Segoe UI', sans-serif;
+    color: rgb(0, 0, 0);
+    text-align: center;
+
+    background: url("../img/fondo.jpg") no-repeat center center/cover;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* 🧊 CONTENEDOR */
+.container {
+    width: 90%;
+    max-width: 800px;
+}
+
+/* ✨ TÍTULOS */
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(248, 248, 248, 0.6);
+}
+
+h2 {
+    margin-bottom: 20px;
+    color: #00e5ff;
+    text-shadow: 0 0 8px rgba(0, 0, 0, 0.8);
+}
+
+/* 🧊 GLASSMORPHISM */
+.glass {
+    background: rgba(252, 252, 252, 0.08);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+
+    border-radius: 20px;
+    border: 1px solid rgba(255,255,255,0.2);
+
+    box-shadow: 0 8px 32px rgba(0,0,0,0.3);
+
+    padding: 15px;
+}
+
+/* 📊 STATS */
+.stats {
+    margin-bottom: 20px;
+}
+
+.stats p {
+    margin: 5px 0;
+    font-size: 1.1rem;
+}
+
+/* 🎮 CANVAS */
+.canvas-container {
+    padding: 15px;
+}
+
+canvas {
+    border-radius: 12px;
+    border: 1px solid rgba(255,255,255,0.3);
+    background: rgba(180, 170, 170, 0.3);
+}
+
+/* 🌟 EFECTO HOVER SUAVE */
+.glass:hover {
+    transform: scale(1.02);
+    transition: 0.3s ease;
+}
